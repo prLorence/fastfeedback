@@ -1,8 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import auth from '../lib/auth';
+import signinWithGithub from '../lib/auth';
+import { useAuth } from '../lib/auth';
 
 export default function Home() {
+  const auth = useAuth();
   return (
     <div className={styles.container}>
       <Head>
@@ -21,35 +25,11 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <button onClick={(e) => auth.signinWithGithub()}> Sign in </button>
+        <div>{auth?.user?.email}</div>
+        {auth?.user?.email && (
+          <button onClick={(e) => auth.signout()}> Sign out </button>
+        )}
       </main>
 
       <footer className={styles.footer}>
@@ -65,5 +45,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
