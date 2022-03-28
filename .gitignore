@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# old files 
+styles(old)
+
 # testing
 /coverage
 
