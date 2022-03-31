@@ -9,17 +9,17 @@ const EmptyState = () => (
       width="100%"
       backgroundColor="white"
       borderRadius={8}
-      p={8}
+      p={16}
       display="flex"
       align="center"
       justify="center"
       direction="column"
     >
-      <Heading size="md" as="h1">
+      <Heading size="lg" as="h1" mb={2}>
         You haven&apos;t created any sites yet.
       </Heading>
-      <Text>Welcome 👋🏻 Let&apos;s get started. </Text>
-      <Button variant="solid" size="md">
+      <Text mb={4}>Welcome 👋🏻 Let&apos;s get started. </Text>
+      <Button fontWeight="medium" variant="solid" size="md">
         Add Your First Site
       </Button>
     </Flex>
