@@ -2,7 +2,7 @@ import React from 'react';
 import { extendTheme } from '@chakra-ui/react';
 import { createIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-const newTheme = {
+const theme = extendTheme({
   fonts: {
     body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`
   },
@@ -11,7 +11,7 @@ const newTheme = {
     medium: 600,
     bold: 700
   }
-};
+});
 
 export const FastFeedLogo = createIcon({
   path: (
@@ -60,7 +60,5 @@ export const GoogleLogo = createIcon({
   ),
   viewBox: '0 0 533.5 544.3'
 });
-
-const theme = extendTheme(newTheme);
 
 export default theme;
