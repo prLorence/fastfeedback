@@ -234,7 +234,6 @@
   dependencies:
     "@chakra-ui/utils" "1.10.4"
 
-
 "@chakra-ui/icons@^1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.1.7.tgz#f8c0c44a969c8654b90026b7d375b550c4bfbc49"
@@ -1370,7 +1369,6 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
-
 
 "@types/prop-types@*":
   version "15.7.4"
@@ -2675,7 +2673,6 @@ minimist@^1.2.0:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
-
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz"
@@ -2990,6 +2987,11 @@ react-focus-lock@2.5.2:
     react-clientside-effect "^1.2.5"
     use-callback-ref "^1.2.5"
     use-sidecar "^1.0.5"
+
+react-hook-form@^7.29.0:
+  version "7.29.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.29.0.tgz#5e7e41a483b70731720966ed8be52163ea1fecf1"
+  integrity sha512-NcJqWRF6el5HMW30fqZRt27s+lorvlCCDbTpAyHoodQeYWXgQCvZJJQLC1kRMKdrJknVH0NIg3At6TUzlZJFOQ==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"

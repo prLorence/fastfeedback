@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Heading, Text, Button, Flex } from '@chakra-ui/react';
 import { FastFeedLogo } from '@/styles/theme';
 import DashboardWrapper from './DashboardWrapper';
+import AddSiteModal from '@/components/AddSiteModal';
 
 const EmptyState = () => (
   <DashboardWrapper>
@@ -19,9 +20,7 @@ const EmptyState = () => (
         You haven&apos;t created any sites yet.
       </Heading>
       <Text mb={4}>Welcome 👋🏻 Let&apos;s get started. </Text>
-      <Button fontWeight="medium" variant="solid" size="md">
-        Add Your First Site
-      </Button>
+      <AddSiteModal />
     </Flex>
   </DashboardWrapper>
 );
